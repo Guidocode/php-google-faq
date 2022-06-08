@@ -1,0 +1,21 @@
+.gb-container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.answer{
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+ol{
+  margin: 20px 0;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+}
