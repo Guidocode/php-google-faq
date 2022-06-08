@@ -74,24 +74,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style/style.css">
 
   <title>Php gogle faq</title>
 </head>
 <body>
 
-  <div class="gb-container my-5">
+  <header>
 
-    <?php foreach($db as $faqs => $faq) :?>
+    <div class="header-top d-flex justify-content-between align-items-center">
+      <div class="left">
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiKoXotLAQMMLsO_qRy4Y4Rz5Fn44nZU0wbSJTHUzlf3nG6qecoD9JSjyNtXu9MSCJ86s&usqp=CAU" alt="Logo Google">
+        <span class="fs-5">Privacy e termini</span>
+      </div>
+      <div class="right d-flex align-items-center">
+        <i class="fa-solid fa-bars fs-4"></i>
+        <button type="button" class="btn btn-primary gb-btn px-4">Accedi</button>
+      </div>
+    </div>
 
-      <p class="question fs-4"> <?php echo $faq['question'] ?> </p>
+    <div class="header-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="answer mb-5"> <?php echo $faq['answer'] ?> </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Introduzione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Norme sulla privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Termini di servizio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tecnologie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link gb-active" href="#">Domande frequenti <span class="sr-only"></span></a>
+            </li>
 
-    <?php endforeach ?>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-  </div>
-  
+  </header>
+
+  <main>
+    <div class="gb-container my-5">
+
+      <?php foreach($db as $faqs => $faq) :?>
+
+        <p class="question fs-4"> <?php echo $faq['question'] ?> </p>
+
+        <div class="answer mb-5"> <?php echo $faq['answer'] ?> </div>
+
+      <?php endforeach ?>
+
+    </div>
+  </main>
   
 </body>
 </html>

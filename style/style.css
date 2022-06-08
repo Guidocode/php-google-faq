@@ -1,3 +1,44 @@
+/* HEADER */
+header{
+  min-height: 100px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.header-top span{
+  color: #5F6369;
+}
+
+.gb-btn{
+  background-color: #3367D6;
+  margin-left: 10px;
+}
+
+.logo{
+  width: 150px;
+}
+
+.header-bottom{
+  height: 50px;
+  border-bottom: 1px solid #CBCACB;
+}
+
+.header-bottom a.gb-active{
+  color: #3367D6 !important;
+  border-bottom: 2px solid #3367D6;
+}
+
+
+
+/* MAIN */
+main{
+  margin-top: 200px;
+}
+
 .gb-container{
   width: 70%;
   margin: 0 auto;
@@ -15,6 +56,7 @@ ol{
 li{
   margin-bottom: 20px;
 }
+
 
 a{
   text-decoration: none;
